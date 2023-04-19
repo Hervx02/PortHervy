@@ -1,0 +1,526 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth ;
+    box-sizing: border-box;
+    font-family: "poppins";
+    outline: none;
+    border: none;
+}
+html{
+    font-size: 62.6%;
+    overflow-x: hidden;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 11rem 9% 3rem;
+}
+.sticky{
+    border-bottom: 1px solid rgb(255, 255, 255,.1);
+}
+.Logo{
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+}
+@keyframes SlideRight{
+    0%{
+       transform: translatey(-100%); 
+       opacity: 1;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    animation: slideTop .5s ease forwards;
+    opacity: 0; 
+    animation-delay: calc(.2s*var(--clr)); 
+}
+@keyframes slideTop{
+    0%{
+       transform: translatey(-100%); 
+       opacity: 1;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+.navbar a:hover,.navbar a.active{
+    background: linear-gradient(to left bottom, lightpink,lightblue,lightgreen); 
+} 
+#menu{
+   font-size: 3.6rem; 
+   display: none;
+   font-size: 6rem;
+   
+}
+.btssio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btssio h3{
+    font-size: 3.2rem;
+    font-weight: 800;
+    opacity: 1;
+}
+
+.home-detail h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 1;
+
+}
+.home-detail p{
+    font-size: 1.6rem;
+    opacity: 1;
+}
+.home-detail h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    opacity: 0;
+
+}
+.home-detail h1{
+    font-size: 5.6rem ;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+
+}
+.home-detail p{
+    font-size: 1.6rem;
+    opacity: 1;
+    animation: SlideLeft 1s ease forwards;
+    opacity: 0;
+    animation-delay:1s ;
+
+}
+@keyframes SlideLeft{
+    0%{
+       transform: translateX(100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.social-media a{
+display: inline-flex;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+color: #ef6e12;
+font-size: 2rem;
+border: 2px solid #ef6e12;
+background: transparent;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+margin: 3rem 1.5rem 3rem 0;
+transition: .6s ease;
+}
+.social-media a:hover, .social-media a.active{
+    background: #ef6e12;
+    color: #000;
+    box-shadow: 0 0 20px #ef6e12;
+}
+.home-detail h3:nth-of-type(2){
+    margin-bottom: 3rem ;
+}
+span{
+    color: #ef6e12;
+}
+.home-detail .btn{
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem 2.8rem;
+    border-radius: 50px;
+    color: #000;
+    background: linear-gradient(to left bottom, lightpink,lightblue,lightgreen);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    transition: -5s ease;
+}
+.btn:hover{
+    background: #000;
+    color: #ef6e12;
+    border: 1px solid #ef6e12;
+    cursor: pointer;
+}
+
+.btssio .btssio-img img{
+    width: 35vw;
+}
+
+.home-detail .btn a{
+    text-decoration: none;
+}
+
+.about-img img{
+    width: 35vw;
+}
+
+
+.about-section h1{
+    font-size: 50px;
+    display: center;
+}
+
+.about-section ul{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.about-section h2{
+    font-size: 25px;
+    
+}
+.about-section p{
+    font-size: 15px;
+}
+.container{
+    display: flex;
+}
+.colonne{
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc ;
+}
+
+.colonne:first-child{
+    border-left: none;
+}
+.colonne h2{
+    margin-top: 0;
+    color: #ef6e12;
+    text-decoration: underline;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem 2.8rem;
+    border-radius: 50px;
+    color: #000;
+    background: linear-gradient(to left bottom, lightpink,lightblue,lightgreen);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    transition: -5s ease;}
+
+    .Competence-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .Competence-section .Competence-box{
+       flex: 1 1 30rem;
+       padding: 3rem 2rem 4rem;
+       border-radius: 2rem; 
+       background: #111;
+       text-align: center;
+       border: 3px solid #000;
+       transition: .5s ease ;
+    }
+
+    .Competence-box:hover{
+       border: 2px solid #ef6e12;
+        transform: scale(1.02);
+    }
+    .competence h2{
+        margin-bottom: 5rem;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Competence-box i{
+        font-size: 100px;
+        background: linear-gradient(to left bottom, lightpink,lightblue,lightgreen);
+    }
+
+    .Competence h3{
+        font-size: 2.6rem;
+    }
+    .Competence-box p{
+       font-size: 1.6rem;
+       margin: 1rem 0 3rem; 
+    }
+
+
+    .Projets{
+        background: #000;
+    }
+    .Projets-box{
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #111;
+        overflow: hidden;
+        display: flex;
+    }
+    .Projets-section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        text-align: center;
+        gap: 2.5rem;
+
+    }
+    .Projets-box img{
+        width: 100%;
+        transition: .5s ease;  
+    }
+
+    .Projets-head{
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+        rgba(0,0,0,.3),#ef6e12
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 4rem;
+        transform: translateY(100%);
+        transition: .5s ease;
+
+    }
+    .Projets h2{
+        margin-bottom: 4rem;
+        font-size: 50px;
+        text-align: center;
+    }
+    .Projets-box:hover img{
+        transform: scale(1.1);
+    }
+    .Projets-box:hover .Projets-head{
+        transform: translateY(0%); 
+    }
+    .Projets-box .Projets-head h4{
+        font-size: 3rem;
+
+    }
+    .Projets-head p{
+        font-size: 1.6rem;
+        margin: .3rem 0 1rem;
+    }
+    .Projets-head a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        border: 50%;
+        text-decoration: none;
+    }
+    .Projets-head i{
+        font-size: 3rem;
+        color: #111;
+    }
+    .contact h2{
+        margin-bottom: 3rem;
+        font-size: 50px;
+        text-align: center;
+    }
+    .contact form{
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    form .input-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    form input,textarea{
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        border-radius: .8rem;
+        gap: 2.5rem;
+        margin: .7rem 0; 
+    }
+    form input{
+        width: 49%;
+    }
+    textarea{
+        resize: none;
+
+    }
+    form .btn{
+       margin-top: 2rem; 
+    }
+    .footer{
+        background: #111;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: wrap;
+        padding: 2rem 9%;
+    }
+    footer .text p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .footerUp a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: #ef6e12;
+        padding: .8rem;
+        text-decoration: none;
+        border-radius: 50%;   
+    }
+    .footerUp i{
+        font-size: 2.4rem;
+        color: #111;
+        text-align: center;
+    }
+    @media(max-width:1200px){
+        html {
+            font-size: 55%;
+        }
+    }
+    @media(max-width:991px){
+        .header{
+            padding: 2rem 3%;
+        }
+        .Projets{
+            margin-bottom: 7rem;
+        }
+       .section{
+            padding: 10rem 3% 2rem;
+        }
+        .footer{
+            padding: 2rem 3%;
+        }
+        .portfolio{
+            margin-bottom: 7rem;
+
+        }
+        .contact{
+           min-height: auto; 
+        }
+        
+    }
+    @media(max-width:768px){
+        #menu{
+            display: block;  
+        }
+        .navbar{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            padding: 1rem 3%;
+            background: #000;
+            border-top: 1px solid rgb(255, 255, 255,.1);
+            box-shadow: 0 .5rem 1rem rgb(255, 255, 255,.1);
+            display: none;
+        }
+        .navbar.active{
+            display: block;
+        }
+        .navbar a{
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0;
+        }
+        .btssio{
+            flex-direction: column-reverse;
+        }
+        .home-detail h1{
+            font-size: 2.6rem;
+        }
+        .home-detail h3{
+            font-size: 2.6rem;
+        }
+        .home-detail h4{
+            font-size: 5rem;
+        }
+        .home-detail img{
+            width: 70vw;
+            margin-top: 4rem;
+        }
+
+        .competence{
+            flex-direction: column;
+        }
+        .about-img{
+            width: 70kw;
+        }
+        .Projets h2{
+           margin-bottom: 3rem; 
+        }
+        .Projets .Projets-section{
+            grid-template-columns: repeat(2.1fr);
+        }
+        .footer{
+            flex-direction: column-reverse;
+        }
+        .footer p{
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    
+
+   
+    
